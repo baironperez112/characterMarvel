@@ -1,0 +1,14 @@
+package com.openpay.characterr.service;
+
+import java.util.*;
+
+/**
+ * Metodos encargados se realiar los servicios de Marvel 
+ * @author Bayron Andres Perez
+ */
+public interface CharacterrService {
+
+	public List<Object> finAllCharacterrs();
+
+	public Object findCharacterrById(Integer characterr);
+}

@@ -1,0 +1,20 @@
+package com.openpay.characterr.client;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CharacterrClient {
+	
+	public List<Object> finAllCharacterrs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public Object findCharacterrById(Integer characterr) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

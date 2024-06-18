@@ -1,0 +1,38 @@
+package com.openpay.characterr.client;
+
+import java.util.List;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
+
+@Service
+public class CharacterrClient {
+	
+	public List<Object> finAllCharacterrs() {
+		String interactionURL = "";
+		List<Object> responseEntity = null;
+		try {
+			HttpEntity<Object> entity = new HttpEntity<>(getHeaders());
+			ParameterizedTypeReference<List<Object>> typeRef = new ParameterizedTypeReference<>() {};
+			responseEntity = restTemplate.exchange(
+					interactionURL, HttpMethod.POST, entity, typeRef);
+				return responseEntity;
+		} catch (Exception ex) {
+		}
+		return null;
+	}
+	
+	public Object findCharacterrById(Integer characterr) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private HttpHeaders getHeadersFresco() {
+	    HttpHeaders headers = new HttpHeaders();
+	    headers.setBasicAuth("er");
+	    return headers;
+	  }
+}

@@ -1,0 +1,35 @@
+package com.openpay.characterr.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.openpay.characterr.client.CharacterrClient;
+import com.openpay.characterr.service.CharacterrService;
+
+/**
+ * Clase de implementacion de los servicios de characterr
+ * @author Bayron Andres Perez Muñoz
+ */
+
+@Service
+public class CharacterrServiceImpl implements CharacterrService {
+
+	@Autowired
+	private CharacterrClient characterrClient;
+	
+	
+	@Override
+	public List<Object> finAllCharacterrs() {
+		// TODO Auto-generated method stub
+		return characterrClient.finAllCharacterrs();
+	}
+
+	@Override
+	public Object findCharacterrById(Integer characterr) {
+		// TODO Auto-generated method stub
+		return characterrClient.findCharacterrById(characterr);
+	}
+
+}

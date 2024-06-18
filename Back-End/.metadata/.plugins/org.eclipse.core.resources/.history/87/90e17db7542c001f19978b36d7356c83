@@ -1,0 +1,17 @@
+package com.openpay.characterr.model;
+
+import java.util.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="AUDITORY")
+public class Auditory {
+
+	@Id
+	private Integer id;
+	
+	private Date date;
+	
+}

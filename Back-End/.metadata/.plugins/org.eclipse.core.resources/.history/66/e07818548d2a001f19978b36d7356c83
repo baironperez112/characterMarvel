@@ -1,0 +1,5 @@
+package com.openpay.characterr.dto;
+
+public class ApiResponseADE {
+
+}

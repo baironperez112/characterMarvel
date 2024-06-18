@@ -1,0 +1,21 @@
+package com.openpay.characterr.utils;
+
+public interface Constants {
+	
+	//Controller (EndPoints)
+	String CLIENTES = "/clientes";
+	String fIN_ALL = "/finAll";
+	String CREATE = "/create";
+	String UPDATE = "/update";
+	String DELETE = "/delete";
+	String FIND_BY_SHARED_KEY = "/findBySharedKey";
+	
+	//End points Marvel
+	String VERSION = "v1/public";
+	String CHARACTER = "characters";
+	
+	String TS = "1";
+	String APYKEY = "047156716b7d376eebce14a2094339f6";
+	String HASH = "86cdf77ab4a9477b6c7d5d16f5b79b11";
+	
+}

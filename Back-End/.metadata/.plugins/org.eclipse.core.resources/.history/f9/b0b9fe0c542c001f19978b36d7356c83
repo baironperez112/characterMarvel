@@ -1,0 +1,12 @@
+#spring.datasource.url: jdbc:h2:mem:testdb
+spring.datasource.url=jdbc:h2:file:/data/refactorizando/h2
+spring.datasource.driverClassName: org.h2.Driver
+spring.datasource.username: sa
+spring.datasource.password: password
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled: true
+
+##KEYS
+marvel.ts=1
+marvel.apikey=047156716b7d376eebce14a2094339f6
+marvel.hash=86cdf77ab4a9477b6c7d5d16f5b79b11

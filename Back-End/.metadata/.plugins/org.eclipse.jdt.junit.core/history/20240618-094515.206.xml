@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CharacterrServiceImplTest" project="characterr" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.openpay.characterr.service.CharacterrServiceImplTest" time="4.429" displayname="CharacterrServiceImplTest" uniqueid="[engine:junit-jupiter]/[class:com.openpay.characterr.service.CharacterrServiceImplTest]">
+    <testcase name="finAllCharacters" classname="com.openpay.characterr.service.CharacterrServiceImplTest" time="4.429" displayname="finAllCharacters()" uniqueid="[engine:junit-jupiter]/[class:com.openpay.characterr.service.CharacterrServiceImplTest]/[method:finAllCharacters()]">
+      <error>java.lang.NullPointerException: Cannot invoke "com.openpay.characterr.client.CharacterrClient.finAllCharacterrs()" because "this.characterrClient" is null&#13;
+	at com.openpay.characterr.service.CharacterrServiceImplTest.finAllCharacters(CharacterrServiceImplTest.java:39)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

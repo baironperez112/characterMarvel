@@ -1,0 +1,7 @@
+spring.application.name=characterr
+
+
+##KEYS
+marvel.ts=1
+marvel.apikey=047156716b7d376eebce14a2094339f6
+marvel.hash=86cdf77ab4a9477b6c7d5d16f5b79b11

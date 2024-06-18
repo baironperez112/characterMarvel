@@ -1,0 +1,5 @@
+package com.openpay.characterr.repository;
+
+public enum AuditoryRepository {
+
+}

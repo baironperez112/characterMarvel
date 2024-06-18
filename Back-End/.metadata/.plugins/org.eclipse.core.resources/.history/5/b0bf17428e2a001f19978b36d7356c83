@@ -1,0 +1,5 @@
+package com.openpay.characterr.controller;
+
+public class CharactersController {
+
+}
