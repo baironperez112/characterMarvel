@@ -1,0 +1,13 @@
+<h1>Héroes de Marvel</h1>
+<hr>
+<div class="card-columns">
+    <div class="card" *ngFor="let item of characters; let id = index ">
+        <img class="card-img-top img-fluid" [src]="item.img" alt="Card image cap">
+        <div class="card-block">
+            <h4 class="card-title">{{item.name}}</h4>
+            <!--<p class="card-text">{{item}}</p>-->
+            <p class="card-text"><small class="text-muted">{{item.description}}</small></p>
+            <button class="btn btn-outline-primary btn-block" type="button" (click)="unHeroe(item.id)">Ver más...</button>
+        </div>
+    </div>
+</div>
