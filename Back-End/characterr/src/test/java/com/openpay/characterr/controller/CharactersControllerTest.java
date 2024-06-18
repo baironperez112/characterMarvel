@@ -13,33 +13,34 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.http.ResponseEntity;
 
-import com.openpay.characterr.client.CharacterrClient;
+import com.openpay.characterr.dto.ApiResponse;
 import com.openpay.characterr.dto.Characterr;
 import com.openpay.characterr.service.impl.CharacterrServiceImpl;
 
 @ExtendWith(MockitoExtension.class)
-public class CharactersControllerTest {
+class CharactersControllerTest {
 
 	@Mock
-	CharacterrClient characterrClient;
+	CharacterrServiceImpl characterrServiceImpl;
 	
 	@InjectMocks
-	CharacterrServiceImpl characterrServiceImpl;
+	CharactersController charactersController;
 	
 	
 	@Test
 	void finAllCharacters() {
-		when(characterrClient.finAllCharacterrs()).thenReturn(getCharacterList());
-		List<Characterr> resp = characterrServiceImpl.finAllCharacterrs();
+		when(characterrServiceImpl.finAllCharacterrs()).thenReturn(getCharacterList());
+		ResponseEntity<ApiResponse<List<Characterr>>> resp = charactersController.getCharacters();
 		assertNotNull(resp);
 		assertFalse(false);
 	}
 	
 	@Test
 	void findByCharacterId() {
-		when(characterrClient.findCharacterrById(anyInt())).thenReturn(getCharacterr());
-		Characterr resp = characterrServiceImpl.findCharacterrById(1);
+		when(characterrServiceImpl.findCharacterrById(anyInt())).thenReturn(getCharacterr());
+		ResponseEntity<ApiResponse<Characterr>> resp = charactersController.getCharactersById(1);
 		assertNotNull(resp);
 	}
 	
